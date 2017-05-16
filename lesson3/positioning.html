@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Positioning Exercises</title>
+	<style>
+		#positioned {
+			background-color: lightyellow;
+			padding: 30px 15px;
+			position: absolute;
+			top: 20px;
+			left: 50%;
+			z-index: 2;
+			width: 400px;
+			margin-left: -200px;
+		}
+		#fixed {
+			position: fixed;
+			width: 100vw;
+			height: 100vh;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			background: rgba(0, 0, 0, .6);
+		}
+		#positioned span {
+			width: 20px;
+			height: 20px;
+			background: #fcfc99;
+			position: absolute;
+			top: -10px;
+			left: -10px;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum ex dui, a viverra dui congue at. Aenean scelerisque cursus ligula. Cras quis dui in quam iaculis pellentesque suscipit ut dolor. Vivamus aliquam sem et sodales venenatis. Proin vel aliquam felis. Fusce suscipit ullamcorper eros, quis facilisis sapien accumsan eu. Nunc cursus euismod molestie. Nunc eu pulvinar nunc. Morbi sit amet dignissim orci. Vestibulum sit amet sapien vel neque vehicula vulputate egestas id mauris. Nulla hendrerit sit amet justo at rhoncus. Quisque efficitur lorem a eros vulputate ornare. Vivamus sodales finibus fringilla.</p>
+
+		<p>Vivamus in accumsan erat, porta faucibus dui. Curabitur sagittis, dolor aliquam bibendum placerat, odio dolor vulputate urna, a elementum turpis augue vitae ligula. Quisque ipsum magna, pulvinar eget aliquet id, interdum elementum sem. Suspendisse potenti. Ut orci nibh, vehicula nec magna eu, maximus posuere turpis. In id molestie odio. Praesent sed maximus enim. Aliquam sagittis gravida sagittis. Suspendisse a elementum lorem.</p>
+
+		<p>Integer vel aliquet nulla. Praesent consectetur turpis id nibh porttitor auctor. Nulla eget condimentum leo. Mauris ut tempus tortor. Nulla condimentum odio purus, eget pharetra sem rhoncus nec. Donec ornare feugiat libero ut blandit. Suspendisse ullamcorper nunc euismod pulvinar hendrerit. Pellentesque sollicitudin nibh quis rhoncus laoreet.</p>
+
+		<p>Maecenas tincidunt velit ac dui imperdiet, a malesuada nulla viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel magna dapibus orci vehicula pharetra sit amet non turpis. Cras a est iaculis, elementum felis in, finibus neque. Donec vel leo felis. Vivamus lacinia id velit eget accumsan. Pellentesque egestas sapien nec pulvinar ultricies. Praesent lobortis tellus lorem, quis venenatis urna porta vitae. Proin quis varius augue. Suspendisse gravida diam vitae mi suscipit suscipit.</p>
+	</section>
+	<div id="fixed"></div>
+	<div id="positioned">
+		<span></span>
+		I'm positioned!
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+body {
+	font-size: 18px;
+	font-family: Georgia, serif;
+	line-height: 30px;
+}
+
+main {
+	width: 696px;
+}
+
+h1, h2, header p {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+	text-align: center;
+}
+
+header a {
+  font-weight: bold;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	color: #BA3925;
+	font-size: 24px;
+}
+
+a {
+	text-decoration: none;
+	color: #2455C3;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+figcaption {
+	font: italic 14px/24px Georgia, serif;
+	text-align: center;
+}
+
+blockquote {
+	font-style: italic;
+	border-left: 1px dotted #bfbfbf;
+	padding-left: 12px;
+	margin-left: 0;
+}

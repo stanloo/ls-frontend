@@ -1,0 +1,186 @@
+@import url("whitespace-reset.css");
+
+body {
+  font: normal 20px Helvetica, Arial, sans-serif;
+  color: #45494d;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header Styles */
+header {
+  background: #2f2840 url("images/bg_body.gif");
+  height: 500px;
+}
+
+header h1 {
+  padding: 75px 0 90px 0;
+}
+
+header nav {
+  width: 550px;
+  margin: 0 auto;
+  font-size: 24px;
+}
+
+header nav ul {
+  text-align: center;
+}
+
+header nav li {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+header nav a {
+  color: #cacaca;
+}
+
+.active {
+  font-weight: bold;
+  color: #6db9ff;
+}
+
+/* Main Styles */
+
+main {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 80px 0 0 0;
+  background: #ffffff;
+}
+
+h2 {
+  font-size: 36px;
+  padding-bottom: 40px;
+}
+
+h3 {
+  font-size: 24px;
+  color: #3e59b2;
+  padding-bottom: 20px;
+}
+
+article {
+  width: 780px;
+  margin: 0 auto;
+  padding: 0 0 100px 0;
+}
+
+/* Team Page */
+
+main ul {
+  padding-bottom: 100px;
+}
+
+main ul li {
+  display: inline-block;
+  padding: 0 30px;
+}
+
+main ul a ,{
+  color: #3e59b2;
+  font-size: 24px;
+}
+
+main ul figcaption {
+  padding-top: 15px;
+}
+
+/* Team Page Details */
+
+.overlay {
+  background: rgba(155,155,255,0.5);
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:rgba(0, 0, 0, 0.35);
+}
+
+main {
+  position: relative;
+}
+
+.details {
+  width: 830px;
+  height: 520px;
+  padding: 120px 75px 0 75px;
+  box-sizing: border-box;
+  text-align: justify;
+  background-color: white;
+  position: absolute;
+  top: 120px;
+  left: 85px;
+  z-index: 1000;
+}
+
+.details figure,
+.details figcaption {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.details figcaption {
+  color: #3e59b2;
+  font-size: 24px;
+  padding-left: 20px;
+}
+
+.details p {
+  padding-top: 25px;
+}
+
+.details a {
+  position: absolute;
+  z-index: 1001;
+  top: 20px;
+  right: 20px;
+}
+
+/* Footer Styles */
+
+footer {
+  background: #e7e7e7;
+  color: #b2b2b2;
+  text-align: center;
+  padding: 80px 0 45px 0;
+}
+
+footer p,
+footer ul {
+  width: 700px;
+  margin: 0 auto;
+}
+
+footer ul {
+  padding: 40px 0;
+}
+
+footer li {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  padding: 0 60px;
+}
+
+footer li a {
+  display: block;
+  width: 46px;
+  height: 46px;
+  background: transparent url("images/icons_social-media.png") 0 0 no-repeat;
+}
+.facebook {
+  background-position: 0 33.3%;
+}
+.email {
+  background-position: 0 66.6%;
+}
+.instagram {
+  background-position: 0 100%;
+}

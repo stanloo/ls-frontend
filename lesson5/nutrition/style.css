@@ -1,0 +1,73 @@
+@import "whitespace-reset.css";
+
+body {
+	font: normal 28px Arial, Helvetica, sans-serif;
+}
+
+main {
+	width: 684px;
+	border: 2px black solid;
+	box-sizing: border-box;
+	margin: 10px;
+	padding: 15px 15px;
+}
+
+main table:first-of-type {
+	border-bottom: 15px solid black;
+}
+
+main table:nth-of-type(2) {
+	border-bottom: 30px solid black;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+p + p {
+	padding-bottom: 10px;
+	border-bottom: 30px solid black;
+	margin-bottom: 5px;
+}
+
+table {
+	width: 650px;
+	border-collapse: collapse;
+}
+
+td {
+	padding: 4px 0;
+}
+
+.right {
+	text-align: right;
+}
+
+tr + tr td {
+	border-top: 1px solid black;
+}
+
+.indent {
+	width: 28px;
+	border-top: none;
+}
+
+.asterisk {
+	text-indent: -16px;
+	font-size: 25px;
+	padding: 16px;
+}
+
+main table:last-of-type {
+	font-size: 22.4px;
+}
+
+main table:last-of-type td {
+	border: none;
+}
+
+th {
+	font-weight: normal;
+	border-bottom: 1px solid black;
+	text-align: left;
+}

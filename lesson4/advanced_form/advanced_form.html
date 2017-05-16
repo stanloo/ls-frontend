@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Advanced Form Exercise</title>
+	<style>
+		body {
+			font: normal 16px Arial, Helvetica, sans-serif;
+			color: #282828;
+		}
+		h1 {
+			font-weight: normal;
+			font-size: 28px;
+		}
+		h2 {
+			font-size: 20px;
+			margin-top: 0;
+		}
+		form {
+			width: 600px;
+			margin: 0 auto;
+		}
+		fieldset {
+			background-color: #ececec;
+			border: none;
+			border-left: 4px solid #cdcccb;
+			margin-bottom: 2px;
+			padding: 24px 32px;
+		}
+		label	{
+			color: #666666;
+			font-weight: bold;
+		}
+		input[type="text"],
+		input[type="email"],
+		input[type="password"],
+		textarea {
+			border: 1px solid #2e67b2;
+			border-radius: 4px;
+			box-sizing: border-box;
+			font-size: 14px;
+			padding: 12px 8px;
+		}
+		input[type="text"],
+		input[type="email"],
+		input[type="password"] {
+			height: 40px;
+			margin: 10px 0 20px 0;
+			width: 100%;
+		}
+		textarea {
+			width: 100%;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.infotext {
+			font-size: 14px;
+			font-weight: normal;
+			padding: 0 0 24px 20px;
+			display: block;
+		}
+		input[type="checkbox"] {
+			position: absolute;
+			left: 365px;
+		}
+		input[type="submit"] {
+			box-sizing: border-box;
+			width: 176px;
+			height: 46px;
+			background-color: #2e67b2;
+			border-radius: 4px;
+			border: none;
+			font-size: 16px;
+			color: white;
+		}
+		input[type="submit"]:hover,
+		input[type="submit"]:focus {
+			background-color: #6095cb;
+		}
+		dd {
+			margin-left: 0;
+		}
+		dd.one-half,
+		dl.one-third,
+		dl.one-half {
+			display: inline-block;
+			box-sizing: border-box;
+			margin: 0;
+			padding-right: 10px;
+		}
+		dd.one-half,
+		dl.one-half {
+			width: 50%;
+		}
+		dd.last-element,
+		dl.last-element {
+			padding-right: 0;
+		}
+		dl.one-third {
+			width: 33.3%;
+		}
+	</style>
+</head>
+<body>
+	<form action="/" method="post">
+		<h1>Create Your Profile</h1>
+		<fieldset>
+			<h2>Personal Info</h2>
+			<dl>
+				<dt><label for="first_name">Your Name</label></dt>
+				<dd class="one-half"><input type="text" name="first_name" id="first_name" placeholder="First"></dd><!--
+				--><dd class="one-half last-element"><input type="text" name="last_name" placeholder="Last"></dd>
+				<dt><label for="email">Email</label></dt>
+				<dd><input type="email" name="email" id="email"></dd>
+			</dl>
+		</fieldset>
+		<fieldset>
+			<h2>Social Media Accounts</h2>
+			<dl class="one-third">
+				<dt><label for="facebook">Facebook</label></dt>
+				<dd><input type="text" name="facebook" id="facebook"></dd>
+			</dl><!--
+			--><dl class="one-third">
+				<dt><label for="twitter">Twitter</label></dt>
+				<dd><input type="text" name="twitter" id="twitter"></dd>
+			</dl><!--
+			--><dl class="one-third last-element">
+				<dt><label for="linkedin">LinkedIn</label></dt>
+				<dd><input type="text" name="linkedin" id="linkedin"></dd>
+			</dl>
+		</fieldset>
+		<fieldset>
+		<h2>Account Info</h2>
+			<dl>
+				<dt><label for="profile_name">Profile Name</label></dt>
+				<dd><input type="text" name="profile_name" id="profile_name"></dd>
+			</dl><!--
+			--><dl class="one-half">
+				<dt><label for="password">Password</label></dt>
+				<dd><input type="password" name="password" id="password"></dd>
+			</dl><!--
+			--><dl class="one-half">
+				<dt><label for="password_confirm">Confirm Password</label></dt>
+				<dd><input type="password" name="password" id="password"></dd>
+			</dl>
+		</fieldset>
+		<fieldset>
+			<h2>Bio</h2>
+			<textarea rows="5" cols="80"></textarea>
+		</fieldset>
+		<fieldset>
+			<input type="checkbox" name="terms_of_use"><label class="infotext">I agree to treat other users with respect, and will not say anything at all if I have nothing nice to say.</label>
+			<input type="submit" value="Create Account">
+		</fieldset>
+	</form>
+</body>
+</html>

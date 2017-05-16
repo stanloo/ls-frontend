@@ -1,0 +1,270 @@
+@import "meyer-reset.css";
+
+
+
+/* General Styles */
+body {
+	color: #45494d;
+	font: normal 20px Arial, Helvetica, sans-serif;
+}
+#wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+a {
+	text-decoration: none;
+	color: #50c3af;
+}
+main, aside {
+	width: 90%;
+	margin: 0 auto;
+	line-height: 1.5;
+	text-align: justify;
+}
+
+
+
+/* Header */
+body > header {
+	background: #3d3d3d;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 40px;
+}
+body > header a {
+	color: white;
+}
+h1 {
+	font-size: 48px;
+	letter-spacing: 20px;
+	background: transparent url("logo.png") 50% bottom no-repeat;
+	background-size: 90% auto;
+	padding-bottom: 95px;
+	margin-bottom: 50px;
+}
+body > header ul { /* Trick to prevent space between inline-block elements */
+	font-size: 0;
+}
+body > header li {
+	display: inline-block;
+	width: 50%;
+	font-size: 20px;
+	box-sizing: border-box;
+	padding: 12px 0 12px 0;
+}
+nav a.active {
+	color: #50c3af;
+}
+@media (min-width: 480px) {
+	h1 {
+		background-size: 503px 85px;
+		padding-bottom: 125px;
+		margin-bottom: 135px;
+	}
+	body > header ul {
+		padding-bottom: 20px;
+	}
+	body > header li {
+		width: auto;
+		margin: 0 28px;
+		padding: 0;
+	}
+}
+@media (min-width: 768px) {
+	body > header {
+		padding-top: 125px;
+	}
+	h1 {
+		font-size: 68px;
+	}
+	body > header ul {
+		padding-bottom: 50px;
+	}
+}
+
+
+
+/* Main */
+h2 {
+	font-size: 24px;
+	font-weight: bold;
+	padding-bottom: 16px;
+}
+h2 a {
+	color: #45494d;
+}
+main {
+	padding: 80px 0 50px 0;
+}
+main section + section {
+	padding-top: 80px;
+}
+.posts article + article {
+	padding-top: 80px;
+}
+.posts header {
+	padding-bottom: 14px;
+}
+.pagination {
+	padding-top: 80px;
+}
+button {
+	display: inline-block;
+	box-sizing: border-box;
+	color: white;
+	padding: 5px 25px;
+	background: #50c3af;
+	border-radius: 20px;
+	border: none;
+	margin-right: 25px;
+	font-size: 14px;
+	outline: none;
+}
+.disabled {
+	background: #d2d5da;
+}
+.comments header {
+	padding-bottom: 25px;
+}
+.comments header img,
+.comments header p {
+	display: inline-block;
+	vertical-align: middle;
+}
+.comments article + article {
+	padding-top: 40px;
+}
+form label {
+	font-weight: bold;
+}
+input,
+textarea {
+	padding: 8px;
+	border-radius: 5px;
+	border: lightgrey 1px solid;
+	font-size: 15px;
+}
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+  outline: none;
+  box-shadow: inset 0 0 5px #0066cc;
+}
+input,
+textarea {
+	width: 100%;
+	box-sizing: border-box;
+}
+input {
+	max-width: 450px;
+}
+textarea {
+	font-family: Arial, Helvetica, sans-serif;
+	resize: none;
+}
+dd + dt {
+	padding-top: 10px;
+}
+dl + button {
+	margin-top: 10px;
+}
+@media (min-width: 600px) {
+	main {
+		width: 76%;
+		margin: 0;
+		float: left;
+		padding: 80px 60px 90px 0;
+		box-sizing: border-box;
+	}
+}
+@media (min-width: 768px) {
+	h2 {
+		font-size: 36px;
+	}
+}
+
+
+
+/* Aside */
+aside {
+	font-size: 14px;
+	color: #787b80;
+	padding-bottom: 100px;
+}
+aside section {
+	padding: 15px;
+	background: #f6f7f8;
+}
+aside section + section {
+	margin-top: 25px;
+}
+aside a {
+	color: #787b80;
+}
+h3 {
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #45494d;
+	padding-bottom: 25px;
+}
+aside ul {
+	margin-left: 20px;
+}
+aside li {
+	list-style-image: url("blt_ul.png");
+}
+@media (min-width: 480px) {
+	aside {
+		width: 100%;
+		margin: 0 0 90px 0;
+		background: #f6f7f8;
+		padding-bottom: 40px;
+	}
+}
+@media (min-width: 480px) and (max-width: 599px) {
+	aside section {
+		display: inline-block;
+		box-sizing: border-box;
+		vertical-align: top;
+		width: 50%;
+	}
+	aside section + section {
+		margin: 0;
+	}
+	aside section:first-of-type {
+		padding: 35px 0 0 35px;
+	}
+	aside section:last-of-type {
+		padding: 35px 35px 0 0;
+	}
+}
+@media (min-width: 600px) {
+	aside {
+		width: 24%;
+		float: right;
+		margin-top: 80px;
+		padding: 35px 0 35px 35px;
+		box-sizing: border-box;
+	}
+	aside section {
+		padding: 0;
+	}
+	aside section + section {
+		margin-top: 100px;
+		padding-right: 30px;
+	}
+}
+
+
+
+/* Footer */
+footer {
+	color: #3e8287;
+	font-size: 12px;
+	padding: 15px 0 30px 0;
+	border-top: 1px solid #d0d0d0;
+}
+@media (min-width: 600px) {
+	footer {
+		clear: both;
+	}
+}
